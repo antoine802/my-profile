@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;600&display=swap');
+ 
+/* ── Reset & base ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  background-color: #080810;
+  color: #b0b0b0;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.9;
+  padding: 60px 80px;
+  max-width: 960px;
+}
+ 
+/* ══════════════════════════════
+   PARTIE 1 — Intro & photo
+══════════════════════════════ */
+.section-intro {
+  background: #0f0f1a;
+  border: 1px solid rgba(232, 201, 126, 0.15);
+  border-radius: 6px;
+  padding: 40px 50px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+ 
+/* ══════════════════════════════
+   PARTIE 2 — Passions
+══════════════════════════════ */
+.section-passions {
+  background: #0d0d18;
+  border: 1px solid rgba(232, 201, 126, 0.1);
+  border-left: 3px solid #e8c97e;
+  border-radius: 6px;
+  padding: 40px 50px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+ 
+/* ══════════════════════════════
+   PARTIE 3 — Follow me
+══════════════════════════════ */
+.section-follow {
+  background: #0f0f1a;
+  border: 1px solid rgba(232, 201, 126, 0.15);
+  border-radius: 6px;
+  padding: 40px 50px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+ 
+/* ── Titre principal ── */
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #e8c97e;
+  font-size: 46px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(232, 201, 126, 0.15);
+}
+ 
+/* ── Titres de section ── */
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #e8c97e;
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 36px;
+  margin-bottom: 10px;
+  position: relative;
+}
+ 
+h2:first-child {
+  margin-top: 0;
+}
+ 
+h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: linear-gradient(to right, #e8c97e, transparent);
+  margin-top: 8px;
+}
+ 
+/* ── Photo de profil ── */
+img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #e8c97e;
+  box-shadow: 0 0 20px rgba(232, 201, 126, 0.15);
+  margin: 28px 0 20px 0;
+  display: block;
+}
+ 
+/* ── Texte courant ── */
+p {
+  color: #909090;
+  max-width: 580px;
+  font-weight: 300;
+  font-size: 15px;
+}
+ 
+/* ── Liens ── */
+a {
+  color: #e8c97e;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+ 
+a:hover {
+  color: #ffffff;
+  letter-spacing: 1.5px;
+}
+ 
+/* ── Liste réseaux sociaux ── */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 8px;
+}
+ 
+ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(232, 201, 126, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+ 
+ul li::before {
+  content: "▸";
+  color: #e8c97e;
+  font-size: 12px;
+  opacity: 0.8;
+}
+ 
+ul li:last-child {
+  border-bottom: none;
+}
